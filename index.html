@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Code Test</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<form name="codeTest" id="codeTest" class="form-box" accept-charset="UTF-8" autocomplete="off" novalidate>
+			<fieldset>
+				<legend>Code test form:</legend>
+				<div class="field-item">
+					<label for="firstName"> First Name: </label>
+					<input type="text" name="firstName" id="firstName" class="field-input" data-validator-not-empty="">
+					<div class="print-area space-separated-input"></div>
+				</div>
+				<div class="field-item">
+					<label for="lastName"> Last Name: </label>
+					<input type="text" name="lastName" id="lastName" class="field-input" data-validator-not-empty="">
+					<div class="print-area reversed-input"></div>
+				</div>
+				<div class="field-item">
+					<label for="favoriteFood"> Favorite Food: </label>
+					<input type="text" name="favoriteFood" id="favoriteFood" class="field-input" data-validator-not-empty="">
+					<div class="print-area ascii-addition"></div>
+				</div>
+				<div class="field-item">
+					<label for="favoriteNumber"> Favorite Number: </label>
+					<input type="number" name="favoriteNumber" id="favoriteNumber" class="field-input" data-validator-type="number" data-validator-not-empty="">
+					<div class="print-area second-highest-factor"></div>
+				</div>
+				<div class="field-item">
+					<label for="favoriteDayOfWeek">Favorite Day of the Week:</label> 
+					<span>
+						<select name="favoriteDayOfWeek" id="favoriteDayOfWeek" class="field-input" data-validator-not-empty="">
+							<option value="">Select a day...</option>
+							<option value="0">Sunday</option>
+							<option value="1">Monday</option>
+							<option value="2">Tuesday</option>
+							<option value="3">Wednesday</option>
+							<option value="4">Thursday</option>
+							<option value="5">Friday</option>
+							<option value="6">Saturday</option>
+						</select>
+					</span>
+					<div class="print-area next-ocurrences"></div>
+				</div>
+				<div class="field-item">
+					<label for="favoriteColor"> Favorite Color: </label> 
+					<span>
+						<select name="favoriteColor" id="favoriteColor" class="field-input" data-validator-not-empty="">
+							<option value="">Select a color...</option>
+							<option value="red">Red</option>
+							<option value="green">Green</option>
+							<option value="blue">Blue</option>
+							<option value="yellow">Yellow</option>
+							<option value="orange">Orange</option>
+							<option value="purple">Purple</option>
+							<option value="black">Black</option>
+						</select>
+					</span>
+					<div class="print-area color-selected"></div>
+				</div>
+				<div class="submitButtonArea">
+					<button type="button" id="codeTestFormSubmit">Submit</button>
+				</div>
+			</fieldset>
+		</form>
+		<script src="utils.js"></script>
+		<script src="validator.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
