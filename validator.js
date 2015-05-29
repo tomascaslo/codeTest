@@ -23,9 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		};
 
 		Validation.notEmpty = function(data) {
-			console.log(data.val.trim());
-			console.log(typeof data.val !== 'undefined');
-			console.log(data.val.trim() !== '');
 			return typeof data.val !== 'undefined' && data.val.trim() !== '';
 		};
 
